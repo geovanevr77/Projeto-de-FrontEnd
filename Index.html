@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <!--Descrição da página-->
+    <meta name="description" content="A Devaria é uma formação para pessoas que não possuem 
+	conhecimento em programação e querem se tornar um bom programador" />
+
+    <!--serve para busca do seu site (palavras chave)-->
+    <meta name="keywords" content="devaria, programação, aulas ao vivo, formação de graça" />
+
+    <!--autor do site-->
+    <meta name="author" content="Geovane" />
+
+    <!-- a cada 300 segundo ele tem um refresh-->
+    <meta http-equiv="refresh" content="300" />
+
+    <!--faz obedecer as dimenssões do site nos aparelhos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--chamando o css-->
+    <link rel="stylesheet" href="public/css/estiloSite.css" />
+    <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/header.css" />
+    <link rel="stylesheet" href="public/css/index.css" />
+    <title>ProjetoDev</title>
+
+    <!--
+        class -> ele pode tá presente em multiplos elementos( . )
+        id -> ele é aplicado para um elemento só( # )
+    -->
+
+</head>
+
+<body>
+    <header>
+
+        <a href="Index.html" class="logo">
+            <img src="public/Fotos/logo-devaria.svg" alt="Logo-devaria" />
+        </a>
+
+        <nav class="menu"> <!-- nav -> serve para organização, é utilizado normalmente em
+            menus, listas, botões que encaminham a outra página-->
+
+            <ul><!-- ul -> informando ao html que você irá fazer uma lista-->
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Professores.html">Professores</a></li>
+                <li><a href="DevStar.html">DevStar</a></li>
+                <li><a href="FaleConosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main><!-- ele é nosso conteúdo principal(o meio da página)-->
+
+        <h1 class="title">Projeto de FrontEnd / Home</h1>
+        <section class="cover-container"><!-- section: é uma marcação de sessão(uma parte do 
+                conteúdo)-->
+            <figure class="imagem1">
+                <img src="https://www.technojobs.co.uk/info/sites/www.technojobs.co.uk/files/styles/article_image_large/public/Blog%20Banner%20%2842%29.png?itok=kr_38j8u"
+                    height="100" alt="fotoDev" />
+                <!--width: largura / height: altura / alt: nomeando a imagem-->
+                <figcaption>Developer</figcaption>
+            </figure>
+        </section>
+        <br />
+        <br />
+        <section class="video">
+            <!--inserindo video-->
+            <div>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/9FqVhXiPJsA" title="Apresentação"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Exemplo de como inserir um video direto do PC
+        
+            <video width="320" height="240" controls="controls">
+             <source src="" type="video/mp4">
+            </video>
+        -->
+        <section class="azure">
+            <h3 class="title">Para os <abbr title="Developers">DEVs</abbr> saberem, a Devaria usa Microsoft Azure</h3>
+            <blockquote class="text-justify" cite="https://azure.microsoft.com/pt-br/solutions/">
+                Resolva os problemas de negócios com combinações comprovadamente eficientes de
+                produtos e serviços do Azure.
+            </blockquote>
+        </section>
+
+        <section class="imagem2">
+            <figure><!--o html entende que figure é uma imagem-->
+                <img src="https://blog.atacadogames.com/wp-content/uploads/2021/07/pc-gamer-ok-500x276.jpg"
+                    width="500" />
+                <figcaption>Pc Gamer</figcaption><!--figcaption : é a legenda da imagem-->
+            </figure>
+        </section>
+    </main>
+    <br />
+    <br />
+    <footer><!--Rodapé-->
+        <section>
+            <!--span: serve para agrupar-->
+            <span>contato@devfront.com.br</span> <br />
+            <span>+55(61) 98548-4756</span>
+        </section>
+    </footer>
+</body>
+
+</html>

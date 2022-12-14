@@ -1,0 +1,42 @@
+/*Estilo Index*/
+main {
+    text-align: center;
+}
+
+.cover-container figure img {
+    width: 100%;
+}
+
+main h3.title {
+    font-size: 1.2em;
+}
+
+main section abbr {
+    color: aqua;
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+.imagem2{
+    width: 100%;
+} 
+
+@media screen and (min-width: 992px) {
+    .cover-container {
+        width: 40%;
+    }
+
+    .cover-container,
+    .video {
+        display: inline-block;
+    }
+
+    main .azure blockquote {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}

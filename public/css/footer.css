@@ -1,0 +1,15 @@
+
+footer {
+    text-align: center;
+    border-top: 1px solid #25cbd3;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    text-transform: lowercase;
+}
+footer section span:first-child {
+    color: green;
+}
+footer section span:last-child {
+    color: #25cbd3;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/estiloSite.css" />
+    <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/header.css" />
+    <link rel="stylesheet" href="public/css/FaleConosco.css" />
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <header>
+
+        <a href="Index.html" class="logo">
+            <img src="public/Fotos/logo-devaria.svg" alt="Logo-devaria" />
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Professores.html">Professores</a></li>
+                <li><a href="DevStar.html">DevStar</a></li>
+                <li><a href="FaleConosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title text-center">Projeto de FrontEnd / Fale Conosco</h1>
+        <h2 class="subtitle text-center">Preencha o formulário e aperte em enviar.</h2>
+
+        <section>
+            <form action="Index.html" class="contact-form margin-horizontal-20px"><!--action: é ação depois que enviar o formulário-->
+                <div>
+                    <label>Nome: </label><input type="text" name="Nome" maxlength="70" />
+                    <!--label: é como se fosse uma legenda do campo do formulário-->
+                </div>
+                <div>
+                    <label>E-mail: </label><input type="text" name="Email" maxlength="150" />
+                </div>
+                <div>
+                    <label>Comentário: </label>
+                    <textarea name="Comentario" rows="3" cols="40"></textarea>
+                    <!--textarea: multilinhas(a caixa de texto é maior.)-->
+                </div>
+                <label>
+                    <label>Sexo: </label>
+                    <input type="radio" name="Sexo" /><span>Feminino</span>
+                    <input type="radio" name="Sexo" /><span>Masculino</span>
+                    <!--radio: botão de opção (os name tem que ser parecidos, quando
+                        voce marca um, desmarca outro)-->
+                    </div>
+                    <div>
+                        <label>Aonde nos conheceu?</label>
+                        <select name="Conheceu">
+                            <!--option select: é uma lista de opções-->
+                            <option selected>Selecione</option>
+                            <option>Amigos</option>
+                            <option>Google</option>
+                            <option>Youtube</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- checkbox: é uma caixinha de marcação-->
+                        <input type="checkbox" name="Novidades" value="Aceite" />
+                        <span>Aceito receber e-mails de novidades.</span>
+                    </div>
+                    <div>
+                        <input type="reset" name="Limpar" value="Limpar" />
+                        <!--submit: marcação de botão de ação de formulario(tem
+                        conexão com <form action="Index.html"> lá de cima)-->
+                        <input type="submit" name="Enviar" value="Enviar" />
+                    </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>contato@devfront.com.br</span> <br />
+        <span>+55(61) 98548-4756</span>
+    </footer>
+</body>
+
+</html>
